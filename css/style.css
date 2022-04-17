@@ -120,8 +120,15 @@
     color: #FFFFFF;
     border-radius: 5px;
 }
+.dot {
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
 
-
+/* SECOND SECTION STARTS HERE */
 .container-story {
     position: relative;
     margin: 50px 24px 0px;
@@ -175,6 +182,7 @@
     color: #000000;
 }
 
+/* THIRD SECTION STARTS HERE */
 .section {
     padding-left: 24px;
     padding-right: 24px;
@@ -228,7 +236,18 @@
     margin-left: 84px;
     background-image: url('/assets/6.png');
 }
+.section2 .ge {
+    display: none;
+    /* right: 586px; */
+    /* top: 91px; */
+    /* z-index: -0.9; */
+}
 
+.por {
+    max-width: 100%;
+    height: auto;
+}
+/* FOURTH SECTION STARTS HERE */
 .section3 {
     width: 100%;
 }
@@ -244,9 +263,170 @@
 .section3-image-wrapper :not(:last-child) {
     margin-right: 16px;    
 }
+.image-block {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+.image-block img {
+    max-width: 100%;
+    max-height: 100%;
+}
 .desk {
     display: none;
 }
+
+.section4 .small-title, .section4 .big-title {
+    text-align: center;
+}
+
+.section4 .description {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.pricing-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 42px;
+    padding: 0 0 50px;
+}
+
+.pricing {
+    width: 269px;
+    box-shadow: 0px 8px 8px rgba(255, 255, 255, 0.1);
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.pricing:not(:first-child) {
+    margin-top: 30px;
+}
+
+.pricing-basic {
+    color: #181818;
+    background: rgba(255, 255, 255, 0.8);
+}
+.pricing-popular {
+    background: #AC9675;
+}
+
+.pricing-title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+}
+
+.pricing-price {
+    display: inline-block;
+    font-size: 36px;
+    line-height: 54px;
+    font-weight: 600;
+    margin-top: 25px;
+    position: relative;
+    color: #000000;
+}
+
+.pricing-price::before {
+    display: block;
+    content: "$";
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.pricing-features {
+    margin-top: 42px;
+}
+
+.pricing-features li {
+    padding: 6px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.pricing-features li:not(:first-child) {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.blog-items img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+/* SECTION SIX STARTS HERE */
+.section-teams {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.team-pro {
+    padding: 15px;
+    border: 2px solid;
+    width: 192px;
+    height: 265px;
+    margin-top: 87px;
+}
+.team-pro img {
+    width: 100%;
+    height: 100%;
+}
+.team-pro-des {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px
+}
+.team1 {
+    display: none;
+}
+
+
+
+
+.section-blog {
+    margin-top: 167px;
+}
+.blog-title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    display: flex;
+    justify-content: center;
+}
+.blog-updates {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blog-items {
+    /* height: 483px; */
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+.blog-des {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+    margin: 16px 0 24px 0;
+}
+
+
+
+
 
 @media (min-width: 768px) {
     .container-slide {
@@ -313,7 +493,6 @@
     }
     .navbar {
         align-items: center;
-        /* padding: 24px 24px 24px 50px; */
         padding: 24px 0;
     }
     .des {
@@ -321,8 +500,8 @@
         align-items: unset;
     }
     .description-header {
-        font-size: 80px;
-        line-height: 120px;
+        font-size: 45px;
+        line-height: 50px;
         text-align: unset;
     }
     .lom {
@@ -340,13 +519,6 @@
     .tap {
         margin: unset;
         margin-right: 30px;
-    }
-    .dot {
-        /* width: 300px; */
-        /* height: 200px; */
-        /* background-color: palevioletred; */
-        position: absolute;
-        bottom: 100px;
     }
     .dot img {
         width: 20px;
@@ -404,35 +576,88 @@
     .section2 {
         position: relative;
     }
-    .section2 img {
-        position: absolute;
-        right: 586px;
-        top: 91px;
-        z-index: -1;
+
+
+
+
+    .pricing-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: unset;
+        justify-content: space-between;
     }
+    .pricing-wrapper .pricing:not(:first-child) {
+        margin-top: unset;
+    }
+    
+    
 
-
-
+    .section-teams {
+        align-items: unset;
+    }
     .team-grid {
         display: flex;
+        justify-content: space-between;
     }
-
-
+    .team-pro {
+        width: unset;
+        height: unset;
+    }
+    
 
 
 
 
     .blog-updates {
-        display: flex;
+        /* display: flex; */
+        flex-direction: row;
+        justify-content: space-between;
     }
+    .blog-items {
+        width: 270px;
+    }
+    .re {
+        width: 100%;
+        color: #FFFFFF;
+        margin: auto;
+    }
+    
 }
 @media (min-width: 1024px) and (max-width: 1279px) {
     .section2 .image-block {
         width: 250px;
         height: 263px;
     }
+    .section2 .ge {
+        position: absolute;
+        right: 22px;
+        top: 193px;
+    }
+    .pricing {
+        width: 196px;
+    }
+    .team-profile {
+        max-width: 196px;
+    }
+    .team-pro {
+        max-width: 100%;
+    }
+    .team-pro img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
 }
 @media (min-width: 1280px) {
+    .dot {
+        margin-top: 60px;
+    }
+    .description-header {
+        font-size: 80px;
+        line-height: 120px;
+        text-align: unset;
+    }
+
     .section {
         padding-left: 140px;
         padding-right: 140px;
@@ -444,6 +669,25 @@
     .section2 .right {
         display: block;
     }
+    .section2 .ge {
+        position: absolute;
+        right: 422px;
+        top: 185px;
+        /* z-index: -0.9; */
+    }
+
+
+    .team-profile {
+        max-width: 269px;
+    }
+
+
+
+    .blog-items {
+        width: 363px;
+    }
+
+
 }
 
 @media (min-width: 1440px) {
@@ -454,4 +698,5 @@
     .container-slide {
         padding-left: 120px;
     }
+
 }
